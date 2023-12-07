@@ -1,14 +1,72 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
+/* Estilos generales del cuerpo del documento */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #8F8F8F; /* Fondo similar al color de la Game Boy */
 }
 
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+/* Estilos del contenedor principal del juego, simulando una Game Boy */
+.game-boy {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: #A9A9A9; /* Color del cuerpo de la Game Boy */
+  border-radius: 15px;
+  overflow: hidden;
 }
+
+/* Estilos de la pantalla del juego */
+.screen {
+  width: 100%;
+  height: 70%;
+  background-color: #000; /* Color de la pantalla de la Game Boy */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilos del marco alrededor de la pantalla */
+.screen:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border: 4px solid #8F8F8F; /* Borde alrededor de la pantalla */
+  border-radius: 5px;
+}
+
+/* Estilos de los controles en la parte inferior de la Game Boy */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #A9A9A9; /* Color de los controles de la Game Boy */
+  position: absolute;
+  bottom: 0; /* Ajustar la posición inferior para que los botones estén dentro del límite inferior de la pantalla */
+  width: 100%; /* Ajustar el ancho para que cubra toda la pantalla */
+  box-sizing: border-box; /* Asegurar que el ancho y el padding no afecten el tamaño total */
+}
+
+/* Estilos de los botones de control */
+.button {
+  width: 50px;
+  height: 30px;
+  background-color: #DAA520; /* Color de los botones */
+  border-radius: 5px;
+}
+
+/* Estilos del canvas dentro de la pantalla */
+#gameCanvas {
+  box-sizing: border-box;
+  position: absolute;
+  width: 80%; /* Ajustar el ancho del canvas para que quede dentro del recuadro */
+  height: 80%; /* Ajustar la altura del canvas para que quede dentro del recuadro */
+  top: 50%; /* Centrar el canvas verticalmente */
+  left: 50%; /* Centrar el canvas horizontalmente */
+  transform: tran
