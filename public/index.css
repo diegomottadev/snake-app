@@ -69,4 +69,15 @@ body {
   height: 80%; /* Ajustar la altura del canvas para que quede dentro del recuadro */
   top: 50%; /* Centrar el canvas verticalmente */
   left: 50%; /* Centrar el canvas horizontalmente */
-  transform: tran
+  transform: translate(-50%, -50%); /* Centrar el canvas exactamente */
+}
+
+/* Estilos del marcador de puntuación */
+#score {
+  color: white; /* Color del texto */
+  font-size: 20px; /* Tamaño del texto */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 10px; /* Añadido un relleno para mayor espacio alrededor del texto */
+  border-radius: 5px; /* Borde redondeado */
+  margin-top: 10px; /* Margen superior para separar el marcador de puntuación de la pantalla */
+}
