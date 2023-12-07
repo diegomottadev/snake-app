@@ -1,6 +1,7 @@
 # Project Description
 
 This project is a simple Snake game implemented in TypeScript and bundled with Snowpack, a lightning-fast frontend build tool designed for modern web development. Snowpack serves as an alternative to heavier bundlers like webpack or Parcel, focusing on speed and efficiency in the development workflow. The Snake game allows players to control the snake's direction to eat fruits, increasing their score.
+![image](https://github.com/diegomottadev/snake-app/assets/64202326/4c254a19-efa2-41a6-927c-7aa51019406c)
 
 ## Installation
 
